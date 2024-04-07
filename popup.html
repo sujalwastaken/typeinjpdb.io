@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typeinjpdb.io Configuration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #282828;
+      color: #f8f8f2;
+      padding: 20px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 300px;
+      min-height: 300px;
+      font-size: 16px;
+    }
+    h1, p {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .input-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Align items vertically */
+      width: 300px; /* Adjusted width */
+      margin-bottom: 10px; /* Add margin between input fields */
+    }
+    input {
+      width: 150px; /* Set fixed width */
+      height: 30px; /* Set fixed height */
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      background-color: #444; /* Dark background color */
+      color: #f8f8f2; /* Light text color */
+      text-align: center; /* Center text */
+      font-size: inherit; /* Inherit font size from parent */
+    }
+    button {
+      display: block;
+      width: 100px;
+      margin: 20px auto;
+      padding: 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: #4B8DFF;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #76a8fe;
+    }
+    a {
+      color: #4B8DFF;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: initial;
+      color: #76a8fe;
+    }
+  </style>
+</head>
+<body>
+<h1>Typeinjpdb.io Configuration</h1>
+<form id="configForm">
+  <div class="input-container">
+    <label for="easyVocabTime">Minimum Time For Easy Graded Vocabulary (seconds):</label>
+    <input type="number" id="easyVocabTime" name="easyVocabTime" value="5">
+  </div>
+  <div class="input-container">
+    <label for="easyKanjiTime">Minimum Time For Easy Graded Kanji (seconds):</label>
+    <input type="number" id="easyKanjiTime" name="easyKanjiTime" value="3">
+  </div>
+  <div class="input-container">
+    <label for="timeBeforeAutoGradingVocab">Time Before Auto Grading Vocab (seconds):</label>
+    <input type="number" id="timeBeforeAutoGradingVocab" name="timeBeforeAutoGradingVocab" value="7">
+  </div>
+  <div class="input-container">
+    <label for="timeBeforeAutoGradingKanji">Time Before Auto Grading Kanji (seconds):</label>
+    <input type="number" id="timeBeforeAutoGradingKanji" name="timeBeforeAutoGradingKanji" value="3">
+  </div>
+  <button type="submit">Save</button>
+</form>
+
+<a href="https://github.com/sujalwastaken/typeinjpdb.io" target="_blank">More Information</a>
+
+<script src="popup.js"></script>
+</body>
+</html>

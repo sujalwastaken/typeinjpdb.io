@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "typeinjpdb.io",
+    "version": "1.0",
+    "description": "jpdb.io browser extension for typing in answers with auto grading",
+    "permissions": ["tabs", "activeTab", "scripting", "storage"],
+    "content_scripts": [
+      {
+        "matches": ["https://jpdb.io/review*"],
+        "js": ["content.js"],
+        "run_at": "document_idle"
+      }
+    ],
+    "action": {
+      "default_title": "typeinjpdb.io",
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/16x16.png",
+        "48": "images/48x48.png",
+        "128": "images/128x128.png"
+        }
+    }
+  }
